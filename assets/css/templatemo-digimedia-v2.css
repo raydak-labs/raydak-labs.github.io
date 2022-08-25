@@ -993,6 +993,10 @@ Banner Style
   z-index: -1;
 }
 
+.main-banner.privacy {
+  padding: 160px 0px 120px 0px;
+}
+
 .main-banner .left-content {
   margin-right: 15px;
 }
