@@ -1,15 +1,18 @@
 {
-  "name": "TailBliss",
-  "version": "0.1.1",
-  "description": "Hugo + Alpine.js + TailwindCSS",
+  "name": "raydak-landingpage-v2",
+  "version": "1.0.0",
+  "description": "raydak landing page",
   "main": "index.js",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
     "alpinejs": "^3.10.5",
     "autoprefixer": "^10.4.12",
     "concurrently": "^7.6.0",
+    "hugo-bin": "^0.97.0",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
+    "prettier": "^2.8.3",
+    "prettier-plugin-go-template": "^0.0.13",
     "tailwindcss": "^3.2.4",
     "test": "^3.2.1"
   },
@@ -20,27 +23,6 @@
     "build": "hugo --minify",
     "test": "hugo"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nusserstudios/tailbliss.git"
-  },
-  "keywords": [
-    "hugo",
-    "tailwind",
-    "tailwindcss",
-    "alpinejs",
-    "minimal",
-    "responsive",
-    "light mode",
-    "dark mode",
-    "hugo blog",
-    "categories",
-    "tags"
-  ],
-  "author": "NusserStudios",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/nusserstudios/tailbliss/issues"
-  },
-  "homepage": "https://github.com/nusserstudios/tailbliss"
+  "author": "raydak GmbH",
+  "license": "Apache-2.0"
 }

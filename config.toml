@@ -1,8 +1,8 @@
-baseURL = "https://tailbliss.netlify.app/"
-title = "TailBliss"
+baseURL = "https://raydak.de"
+title = "raydak"
 
-languageCode = "en-us"
-DefaultContentLanguage = "en"
+languageCode = "de-de"
+DefaultContentLanguage = "de"
 
 enableEmoji = true
 enableGitInfo = true
@@ -13,14 +13,14 @@ darkmode_js = ["assets/js/darkmode.js"]
 enableInlineShortcodes = true
 
 [params]
-author = "Nusser Studios"
+author = "raydak GmbH"
 authorimage = "../assets/images/global/author.webp"
-github = "https://github.com/nusserstudios"
-facebook = "https://facebook.com/nusserstudios"
+github = "https://github.com/raydak-labs"
+facebook = "nothing"
 og_image = "/images/tailbliss-cover.png"
-sitename = "TailBliss"
-twitter = "@nusserstudios"
-description = "TailBliss is Hugo Starter"
+sitename = "raydak"
+twitter = "nothing"
+description = "raydak"
 
 [markup]
 [markup.goldmark]

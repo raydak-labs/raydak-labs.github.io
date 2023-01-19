@@ -1,0 +1,12 @@
+---
+title: "Container & Kubernetes"
+featured_image: {}
+icon: fa-brands fa-docker
+description: Mit Containern vereinfacht Ihr Eure Deployments und bringt Dev & Ops zusammen. Unser Know-How zu laufzeitkritischen Kubernetes-Umgebungen on-premises und in der Cloud helfen Euch mit Eurer Kubernetes-Umgebung.
+tags:
+  - Kubernetes-Deployment & Betrieb
+  - Containerisierung Eurer Apps
+  - Monitoring, Logging & Alerting
+  - Ohne Vendor-Lock-In
+---
+

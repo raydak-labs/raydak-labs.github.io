@@ -1,5 +1,5 @@
 ---
-author: TailBliss
+author: raydak GmbH
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 ---
