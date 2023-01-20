@@ -20,6 +20,4 @@ Your Email: Subject: Your message: Send Message</description></item><item><title
 Beautiful typographic defaults for HTML you don&amp;rsquo;t control.
 The official Tailwind CSS Typography plugin provides a set of prose classes you can use to add beautiful typographic defaults to any vanilla HTML you don’t control, like HTML rendered from Markdown, or pulled from a CMS.
 Tailwind CSS IntelliSense extension for Visual Studio Code
-&amp;lt;article class=&amp;#34;prose lg:prose-xl&amp;#34;&amp;gt;
-{{ markdown }}
-&amp;lt;/article&amp;gt; To see what it looks like in action, check out our live demo on Tailwind Play.</description></item></channel></rss>
+&amp;lt;article class=&amp;#34;prose lg:prose-xl&amp;#34;&amp;gt; {{ markdown }} &amp;lt;/article&amp;gt; To see what it looks like in action, check out our live demo on Tailwind Play.</description></item></channel></rss>
