@@ -5,10 +5,10 @@
   "main": "index.js",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
-    "alpinejs": "^3.10.5",
-    "autoprefixer": "^10.4.12",
+    "alpinejs": "^3.11.1",
+    "autoprefixer": "^10.4.13",
     "concurrently": "^7.6.0",
-    "hugo-bin": "^0.97.0",
+    "hugo-bin": "^0.98.0",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
     "prettier": "^2.8.3",
@@ -21,7 +21,8 @@
     "watch:tw": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch",
     "watch:hugo": "hugo server",
     "build": "hugo --minify",
-    "test": "hugo"
+    "test": "hugo",
+    "update:hugo": "hugo mod graph"
   },
   "author": "raydak GmbH",
   "license": "Apache-2.0"

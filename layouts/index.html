@@ -37,6 +37,73 @@
           </div>
         </div>
       </div>
+      <div id="team" class="team">
+        <div
+          class="mx-auto text-gray-900 max-w-7xl dark:text-gray-50 md:px-1.5"
+        >
+          <div
+            class="px-4 text-gray-900 dark:text-white not-prose dark:text-zinc-200"
+          >
+            <div
+              class="grid gap-4 mx-auto mt-6 mb-6 pb-6 lg:max-w-none md:grid-cols-2"
+            >
+              {{ range $.Site.Data.founders.founders }}
+                <div
+                  class="member flex items-start flex-col xs:flex-row shadow-lg bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white dark:text-zinc-200"
+                >
+                  <div
+                    class="pic shrink-0 sm:min-w-fit self-center sm:flex-start"
+                  >
+                    <img
+                      src="{{ (resources.GetMatch .image ).RelPermalink }}"
+                      alt="Founder image: {{ .name }}"
+                      class="w-full max-w-xl"
+                      style="max-height: auto; max-width: 180px;"
+                      width="180"
+                      height="auto"
+                    />
+                  </div>
+                  <div class="member-info">
+                    <h4 class="text-indigo-500">{{ .name }}</h4>
+                    <span>{{ .position }}</span>
+                    <p>
+                      {{ .description }}
+                    </p>
+                    <div class="social">
+                      {{ if .github }}
+                        <a
+                          href="https://github.com/{{ .github }}"
+                          target="_blank"
+                          class="bg-gray-300 hover:bg-indigo-500"
+                          ><i class="fa-brands fa-github"></i
+                        ></a>
+                      {{ end }}
+
+                      {{ if .linkedin }}
+                        <a
+                          href="https://www.linkedin.com/in/{{ .linkedin }}"
+                          target="_blank"
+                          class="bg-gray-300 hover:bg-indigo-500"
+                          ><i class="fa-brands fa-linkedin"></i
+                        ></a>
+                      {{ end }}
+
+                      {{ if .homepage }}
+                        <a
+                          href="{{ .homepage }}"
+                          target="_blank"
+                          class="bg-gray-300 hover:bg-indigo-500"
+                          ><i class="fa-solid fa-link"></i
+                        ></a>
+                      {{ end }}
+                    </div>
+                  </div>
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- More main page content here... -->
@@ -46,47 +113,6 @@
       <div
         class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8"
       >
-        <div
-          class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0"
-        >
-          <!-- Content area -->
-          <div class="md:pt-12 sm:pt-6 lg:pt-20">
-            <h2
-              class="text-3xl font-bold tracking-tight text-gray-900 capitalize dark:text-gray-50 sm:text-4xl"
-            >
-              Wie helfen wir euch?
-            </h2>
-            <div class="mt-6 space-y-6 text-gray-900 dark:text-white">
-              <p class="text-lg leading-7">
-                Wir bieten ein breites Portfolio an Wissen in den
-                verschiedensten Punkten der IT. Einen großen Wert legen wir
-                dabei auf das Cloud-Umfeld, Kubernetes, DevOps und saubere
-                Softwareentwicklung.
-              </p>
-
-              <div
-                class="mt-12 grid grid-cols-3 gap-4 md:grid-cols-3 lg:mt-0 lg:grid-cols-3"
-              >
-                <div
-                  class="flex justify-center col-span-1 px-4 py-4 bg-gray-50 dark:bg-gray-300/10"
-                >
-                  <span class="text-xl font-bold"> Consulting </span>
-                </div>
-                <div
-                  class="flex justify-center col-span-1 px-4 py-4 bg-gray-50 dark:bg-gray-300/10"
-                >
-                  <span class="text-xl font-bold"> Workshops </span>
-                </div>
-                <div
-                  class="flex justify-center col-span-1 px-4 py-4 bg-gray-50 dark:bg-gray-300/10"
-                >
-                  <span class="text-xl font-bold"> Coding </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div class="relative sm:py-8 lg:py-0">
           <div
             aria-hidden="true"
@@ -134,31 +160,14 @@
           >
             <div class="relative overflow-hidden shadow-xl rounded-2xl">
               {{ $heroOne := resources.GetMatch "images/pages/home/banner_1.jpg" }}
-              {{ $tiny := ($heroOne.Fit "600x340 q80") }}
-              {{ $small :=
-                ($heroOne.Fit "600x340 q80")
-              }}
-              {{ $medium := ($heroOne.Fit "600x340 q80") }}
-
-              {{ $large := ($heroOne.Fit "1374x1000 q80") }}
-
-
+              {{ $banner_resized := ($heroOne.Resize "500x") }}
               <img
-                srcset="
-                        {{- with $tiny.RelPermalink -}}{{ . }} 480w{{- end -}}
-                        {{- with $small.RelPermalink -}}
-                  , {{ . }} 768w
-                {{- end -}}
-                        {{- with $medium.RelPermalink -}}
-                  , {{ . }} 1024w
-                {{- end -}}
-                        {{- with $large.RelPermalink -}}
-                  , {{ . }} 1374w
-                {{- end -}}"
-                src="{{ $heroOne.RelPermalink }}"
+                src="{{ $banner_resized.RelPermalink }}"
                 alt="TailBliss Hacktoberfest Image"
                 class="w-full rounded-lg shadow-xl lg:h-full lg:w-auto lg:max-w-none"
                 loading="lazy"
+                width="100%"
+                height="auto"
               />
               <div
                 class="absolute inset-0 bg-indigo-300 mix-blend-multiply"
@@ -166,6 +175,46 @@
               <div
                 class="absolute inset-0 bg-gradient-to-t from-indigo-600 opacity-80"
               ></div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0"
+        >
+          <!-- Content area -->
+          <div class="md:pt-12 sm:pt-6 lg:pt-20">
+            <h2
+              class="text-3xl font-bold tracking-tight text-gray-900 capitalize dark:text-gray-50 sm:text-4xl"
+            >
+              Wie helfen wir euch?
+            </h2>
+            <div class="mt-6 space-y-6 text-gray-900 dark:text-white">
+              <p class="text-lg leading-7">
+                Wir bieten ein breites Portfolio an Wissen in den
+                verschiedensten Punkten der IT. Einen großen Wert legen wir
+                dabei auf das Cloud-Umfeld, Kubernetes, DevOps und saubere
+                Softwareentwicklung.
+              </p>
+
+              <div
+                class="mt-12 grid grid-cols-3 gap-4 md:grid-cols-3 lg:mt-0 lg:grid-cols-3"
+              >
+                <div
+                  class="flex justify-center col-span-1 px-4 py-4 bg-gray-50 dark:bg-gray-300/10"
+                >
+                  <span class="text-xl font-bold"> Consulting </span>
+                </div>
+                <div
+                  class="flex justify-center col-span-1 px-4 py-4 bg-gray-50 dark:bg-gray-300/10"
+                >
+                  <span class="text-xl font-bold"> Workshops </span>
+                </div>
+                <div
+                  class="flex justify-center col-span-1 px-4 py-4 bg-gray-50 dark:bg-gray-300/10"
+                >
+                  <span class="text-xl font-bold"> Coding </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

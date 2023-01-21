@@ -1,4 +1,4 @@
-baseURL = "https://raydak.de"
+baseURL = "https://www.raydak.de"
 title = "raydak"
 
 languageCode = "de-de"
@@ -20,7 +20,7 @@ facebook = "nothing"
 og_image = "/images/tailbliss-cover.png"
 sitename = "raydak"
 twitter = "nothing"
-description = "raydak"
+description = "Home"
 
 [markup]
 [markup.goldmark]
@@ -58,4 +58,3 @@ privacyEnhanced = true
   [module.hugoVersion]
     extended = true
     min = "0.105.0"
-    max = "0.105.0"

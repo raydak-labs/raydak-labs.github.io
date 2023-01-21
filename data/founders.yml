@@ -1,0 +1,15 @@
+founders:
+  - name: Vincent Link
+    position: CEO
+    description: TODO
+    github: null
+    linkedin:
+    homepage:
+    image: images/pages/home/vincent.jpg
+  - name: Eduard Marbach
+    position: CEO
+    description: Hi! Ich bin schon immer begeistert mit Technologien aller Art und versuche mich stets weiterzubilden.
+    github: BlackDark
+    linkedin: eduard-marbach-716445134
+    homepage: https://eduard-marbach.de
+    image: images/pages/home/eddi.png

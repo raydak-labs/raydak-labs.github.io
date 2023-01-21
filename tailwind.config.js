@@ -5,6 +5,10 @@ module.exports = {
   content: ["./layouts/**/*.html", "./content/**/*.md", "./data/**/*.yml"],
   darkMode: "class",
   theme: {
+    screens: {
+      xs: "475px",
+      ...defaultTheme.screens,
+    },
     extend: {
       colors: {
         primary: "colors.indigo",
