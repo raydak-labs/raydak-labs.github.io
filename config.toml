@@ -55,6 +55,6 @@ disable = false
 privacyEnhanced = true
 
 [module]
-  [module.hugoVersion]
-    extended = true
-    min = "0.105.0"
+[module.hugoVersion]
+extended = true
+min = "0.105.0"

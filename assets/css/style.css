@@ -2392,12 +2392,12 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
-}
-
 .-ml-3 {
   margin-left: -0.75rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .mt-3 {
@@ -2759,9 +2759,9 @@ video {
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
-.bg-gray-800 {
+.bg-gray-300 {
   --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .bg-indigo-300 {
@@ -2791,26 +2791,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-}
-
-.bg-gray-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-}
-
-.bg-gray-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
-}
-
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-t {
@@ -3491,12 +3471,12 @@ font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
-.dark .dark\:bg-gray-300\/10 {
-  background-color: rgb(209 213 219 / 0.1);
-}
-
 .dark .dark\:bg-gray-900\/10 {
   background-color: rgb(17 24 39 / 0.1);
+}
+
+.dark .dark\:bg-gray-300\/10 {
+  background-color: rgb(209 213 219 / 0.1);
 }
 
 .dark .dark\:bg-gray-900\/50 {
@@ -3717,14 +3697,14 @@ font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     justify-content: center;
   }
 
-  .sm\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
   .sm\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .sm\:px-12 {
@@ -4456,14 +4436,14 @@ font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     padding-right: 2rem;
   }
 
-  .lg\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .lg\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .lg\:py-20 {
