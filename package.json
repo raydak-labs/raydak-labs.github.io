@@ -27,5 +27,8 @@
     "update:hugo": "hugo mod graph"
   },
   "author": "raydak GmbH",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "hugo-bin": {
+    "buildTags": "extended"
+  }
 }
