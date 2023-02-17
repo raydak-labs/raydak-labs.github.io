@@ -1,0 +1,41 @@
+baseURL: https://www.raydak.de
+defaultContentLanguage: de
+enableRobotsTXT: true
+languageCode: de-de
+locale: de_DE
+title: raydak
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  author: raydak GmbH
+  description: Home
+  github: https://github.com/raydak-labs
+  title: raydak
+
+# see https://gohugo.io/about/hugo-and-gdpr/#disable-all-services
+privacy:
+  disqus:
+    disable: true
+  googleAnalytics:
+    disable: true
+  instagram:
+    disable: true
+  twitter:
+    disable: true
+  vimeo:
+    disable: true
+  youtube:
+    disable: true
+
+module:
+  mounts:
+    - source: assets
+      target: assets
+    - source: node_modules/alpinejs/dist/module.esm.js
+      target: assets/js/alpinejs.js
+    - source: node_modules/@fortawesome/fontawesome-free/js
+      target: assets/js/fontawesome

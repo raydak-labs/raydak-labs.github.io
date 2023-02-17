@@ -1,0 +1,35 @@
+{
+  "name": "raydak-labs.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "raydak GmbH",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "6.3.0",
+    "alpinejs": "3.11.1",
+    "tailwindcss": "3.2.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "0.5.9",
+    "autoprefixer": "10.4.13",
+    "concurrently": "7.6.0",
+    "postcss": "8.4.21",
+    "postcss-cli": "10.1.0",
+    "prettier": "2.8.4",
+    "prettier-plugin-go-template": "0.0.13",
+    "prettier-plugin-tailwindcss": "0.2.2",
+    "rimraf": "4.1.2"
+  },
+  "scripts": {
+    "build": "yarn clean && yarn build:tailwind && yarn build:hugo",
+    "build:tailwind": "NODE_ENV=production yarn tailwind --minify",
+    "build:hugo": "hugo --minify",
+    "clean": "rimraf public/",
+    "dev": "concurrently yarn:dev:*",
+    "dev:tailwind": "yarn tailwind --watch",
+    "dev:hugo": "hugo server",
+    "start": "yarn dev",
+    "tailwind": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css"
+  }
+}

@@ -2,8 +2,6 @@
 node_modules/
 yarn-error.log
 
-assets/css/style.css
-
 # Created by https://www.toptal.com/developers/gitignore/api/hugo
 # Edit at https://www.toptal.com/developers/gitignore?templates=hugo
 
