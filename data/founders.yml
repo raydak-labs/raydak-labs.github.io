@@ -1,9 +1,10 @@
 - name: Vincent Link
   position: Co-Founder
-  description: TODO
-  github: null
-  linkedin:
-  homepage:
+  description: |
+    Herausforderungen motivieren mich, vor allem beim Entwickeln von einfachen Lösungen für komplexe Probleme.
+  github: linkvt
+  linkedin: linkvt
+  homepage: https://www.linkvt.de
   image: images/pages/home/vincent.jpg
 - name: Eduard Marbach
   position: Co-Founder
