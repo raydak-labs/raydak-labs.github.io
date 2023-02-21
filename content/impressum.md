@@ -3,7 +3,7 @@ title: Impressum
 date: 2023-01-19T03:10:36.000Z
 draft: false
 description: Impressum
-locale: de_DF
+locale: de_DE
 ---
 
 <!-- @format -->

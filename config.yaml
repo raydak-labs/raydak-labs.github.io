@@ -3,7 +3,8 @@ defaultContentLanguage: de
 enableRobotsTXT: true
 languageCode: de-de
 locale: de_DE
-title: raydak
+title: raydak GmbH
+enableInlineShortcodes: true
 
 markup:
   goldmark:
@@ -14,8 +15,21 @@ params:
   author: raydak GmbH
   description: Home
   github: https://github.com/raydak-labs
-  title: raydak
-
+  linkedIn: https://linkedin.com/company/raydak
+  shortTitle: raydak
+  footer:
+    links:
+      - title: Impressum
+        link: /impressum
+      - title: Credits
+        link: /credits
+    socialmedia:
+      - title: Github
+        iconClasses: fa-brands fa-github
+        link: "{{ .Site.Params.github }}"
+      - title: LinkedIn
+        iconClasses: fa-brands fa-linkedin
+        link: "{{ .Site.Params.linkedIn }}"
 # see https://gohugo.io/about/hugo-and-gdpr/#disable-all-services
 privacy:
   disqus:
@@ -35,7 +49,7 @@ module:
   mounts:
     - source: assets
       target: assets
-    - source: node_modules/alpinejs/dist/module.esm.js
+    - source: node_modules/alpinejs/dist/cdn.js
       target: assets/js/alpinejs.js
     - source: node_modules/@fortawesome/fontawesome-free/js
       target: assets/js/fontawesome

@@ -2,10 +2,8 @@
   <main>
     <div class="bg-gray-200 dark:bg-gray-900">
       <div class="mx-auto max-w-screen-xl px-4 py-8">
-        <div
-          class="mb-8 grid items-center gap-8 sm:mb-0 lg:grid-cols-12 lg:gap-12"
-        >
-          <div class="col-span-6 px-4 text-center sm:mb-6 lg:mb-0 lg:text-left">
+        <div class="mb-8 grid items-center gap-8 sm:mb-0 ">
+          <div class="col-span-6 px-4 text-center sm:mb-6 lg:mb-0">
             <h1
               class="mb-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white md:text-5xl xl:text-6xl"
             >
@@ -27,7 +25,7 @@
               </span>
             </a>
             <p
-              class="mx-auto mb-6 max-w-xl font-normal text-gray-900 dark:text-gray-50 md:text-lg lg:mx-0 xl:mb-2 xl:text-xl"
+              class="mx-auto mb-6 max-w-xl font-normal text-gray-900 dark:text-gray-50 md:text-lg xl:mb-2 xl:text-xl"
             >
               Wir kennen die aktuellsten Trends und Technologie-Stacks und
               wissen, wie man damit effiziente und performante Systeme baut. Wir
@@ -41,15 +39,13 @@
         <div
           class="mx-auto max-w-7xl text-gray-900 dark:text-gray-50 md:px-1.5"
         >
-          <div
-            class="not-prose px-4 text-gray-900 dark:text-white dark:text-zinc-200"
-          >
+          <div class="not-prose px-4 text-gray-900 ">
             <div
               class="mx-auto mt-6 mb-6 grid gap-4 pb-6 md:grid-cols-2 lg:max-w-none"
             >
-              {{ range $.Site.Data.founders.founders }}
+              {{ range $.Site.Data.founders }}
                 <div
-                  class="member flex flex-col items-start bg-gray-50 text-gray-900 shadow-lg dark:bg-gray-800 dark:text-white dark:text-zinc-200 sm:flex-row"
+                  class="member flex flex-col items-start bg-gray-50 text-gray-900 shadow-lg dark:bg-gray-800  dark:text-zinc-200 sm:flex-row"
                 >
                   <div
                     class="pic sm:flex-start shrink-0 self-center sm:min-w-fit"
@@ -74,7 +70,7 @@
                         <a
                           href="https://github.com/{{ .github }}"
                           target="_blank"
-                          class="bg-gray-300 hover:bg-indigo-500"
+                          class="bg-gray-300 hover:bg-indigo-500 dark:bg-gray-700"
                           ><i class="fa-brands fa-github"></i
                         ></a>
                       {{ end }}
@@ -83,7 +79,7 @@
                         <a
                           href="https://www.linkedin.com/in/{{ .linkedin }}"
                           target="_blank"
-                          class="bg-gray-300 hover:bg-indigo-500"
+                          class="bg-gray-300 hover:bg-indigo-500 dark:bg-gray-700"
                           ><i class="fa-brands fa-linkedin"></i
                         ></a>
                       {{ end }}
@@ -92,7 +88,7 @@
                         <a
                           href="{{ .homepage }}"
                           target="_blank"
-                          class="bg-gray-300 hover:bg-indigo-500"
+                          class="bg-gray-300 hover:bg-indigo-500 dark:bg-gray-700"
                           ><i class="fa-solid fa-link"></i
                         ></a>
                       {{ end }}
@@ -188,9 +184,9 @@
             </h2>
             <div class="mt-6 space-y-6 text-gray-900 dark:text-white">
               <p class="text-lg leading-7">
-                Wir bieten ein breites Portfolio an Wissen in den
-                verschiedensten Punkten der IT. Einen großen Wert legen wir
-                dabei auf das Cloud-Umfeld, Kubernetes, DevOps und saubere
+                Wir bieten ein breites Portfolio an Wissen in den verschiedenen
+                Bereichen der IT. Einen großen Wert legen wir dabei auf das
+                Cloud-Umfeld, Kubernetes, DevOps und saubere
                 Softwareentwicklung.
               </p>
 
@@ -221,7 +217,7 @@
 
     <!-- Logos -->
     <div
-      class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 md:pt-24 md:pb-16 lg:max-w-7xl lg:px-8"
+      class="mx-auto hidden max-w-md px-4 sm:max-w-3xl sm:px-6 md:pt-24 md:pb-16 lg:max-w-7xl lg:px-8"
     >
       <div class="lg:grid lg:grid-cols-2 lg:items-center lg:gap-24">
         <div>
@@ -409,19 +405,18 @@
           <p
             class="mx-auto mt-3 max-w-2xl text-xl text-gray-500 dark:text-gray-300 sm:mt-4"
           >
-            Der Bedarf an unterschiedlichen Technologien und Tools ist in der IT
-            grenzenlos und deshalb bieten wir ein fundiertes Paket an den
-            wichtigsten Elementen an. Diese decken alle aktuellen und modernen
-            Trends ab!
+            Wir bieten Euch ein fundiertes Paket über den kompletten Stack
+            hinweg an - ab der Konzeption über die Umsetzung der
+            IT-Infrastruktur bis hin zur Anwendungsentwicklung. Wir setzen dabei
+            auf moderne, bewährte und nachhaltige Methoden und Technologien
+            &mdash; gerne auch cutting edge!
           </p>
         </div>
 
         <div
           class="mx-auto max-w-7xl text-gray-900 dark:text-gray-50 md:px-1.5"
         >
-          <div
-            class="not-prose px-4 text-gray-900 dark:text-white dark:text-zinc-200"
-          >
+          <div class="not-prose px-4 text-gray-900 dark:text-zinc-200">
             <div
               class="mx-auto mt-12 mb-4 grid gap-4 md:grid-cols-2 lg:max-w-none"
             >
@@ -433,7 +428,7 @@
                   class="flex flex-col overflow-hidden rounded-lg bg-gray-50 shadow-lg dark:bg-gray-900"
                 >
                   <div
-                    class="flex flex-col items-center overflow-hidden rounded-t-lg bg-indigo-600 object-fill"
+                    class="flex flex-col items-center overflow-hidden rounded-t-lg bg-indigo-500 object-fill dark:bg-indigo-600 "
                     width="100%"
                   >
                     <span class="icon p-6"
@@ -443,7 +438,7 @@
                   <div class="p-6">
                     <div class="flex-1">
                       <span
-                        class="mt-2 block text-2xl font-black text-gray-900 hover:text-indigo-600 hover:underline dark:text-gray-200 dark:hover:text-indigo-500"
+                        class="mt-2 block text-2xl font-black text-gray-900  dark:text-gray-200 "
                       >
                         {{ .title }}
                       </span>
@@ -453,10 +448,8 @@
                         {{ .description }}
                       </p>
                     </div>
-                    <div
-                      class="text-md block pt-6 font-medium text-indigo-600 dark:text-indigo-100"
-                    >
-                      <p class="pr-2 font-black">Fokus:</p>
+                    <div class="text-md block pt-6 font-medium">
+                      <p class="pr-2 text-lg font-bold">Fokus</p>
                       {{ range $elem_index, $elem_val := (.tags) }}
                         {{- if gt
                           $elem_index 0
@@ -480,7 +473,7 @@
         <div
           class="absolute inset-y-0 left-0 w-1/2 rounded-r-3xl bg-gray-50 dark:bg-gray-900/10"
         ></div>
-        <svg
+        <!-- <svg
           class="absolute top-8 left-1/2 -ml-3"
           width="404"
           height="392"
@@ -511,7 +504,7 @@
             height="392"
             fill="url(#8228f071-bcee-4ec8-905a-2a059a2cc4fb)"
           />
-        </svg>
+        </svg> -->
       </div>
       <div class="mx-auto max-w-md px-7 sm:max-w-3xl lg:max-w-7xl">
         <div
