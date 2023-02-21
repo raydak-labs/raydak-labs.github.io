@@ -35,7 +35,6 @@
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
-  /* color: #37517e; */
 }
 
 .team .member span {
@@ -70,14 +69,12 @@
 }
 
 .team .member .social a {
-  transition: ease-in-out 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50px;
   width: 32px;
   height: 32px;
-  /* background: #eff2f8; */
 }
 
 .team .member .social a i {
