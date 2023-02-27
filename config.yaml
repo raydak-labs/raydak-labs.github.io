@@ -6,6 +6,10 @@ locale: de_DE
 title: raydak GmbH
 enableInlineShortcodes: true
 
+imaging:
+  quality: 95
+  resampleFilter: Lanczos # see https://gohugo.io/content-management/image-processing/#resampling-filter
+
 markup:
   goldmark:
     renderer:

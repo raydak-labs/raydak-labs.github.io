@@ -51,7 +51,7 @@
                     class="pic sm:flex-start shrink-0 self-center sm:min-w-fit"
                   >
                     <img
-                      src="{{ (resources.GetMatch .image ).RelPermalink }}"
+                      src="{{ ((resources.GetMatch .image ).Resize "500x webp").RelPermalink }}"
                       alt="Founder image: {{ .name }}"
                       class="w-full max-w-xl"
                       style="max-height: auto; max-width: 180px;"
