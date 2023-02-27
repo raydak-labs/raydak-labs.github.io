@@ -26,8 +26,8 @@
       {{ end }}
     </nav>
     <div class="mt-8 flex justify-center space-x-6">
-      {{ range .Site.Data.footer.socials }}
-        <a href="{{ .url }}" class="text-gray-400 hover:text-gray-300">
+      {{ range .Site.Params.footer.socialmedia }}
+        <a href="{{ .link }}" class="text-gray-400 hover:text-gray-300">
           <span
             class="{{ .iconClasses }} text-2xl"
             title="{{ .title }}"

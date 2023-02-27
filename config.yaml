@@ -18,8 +18,6 @@ markup:
 params:
   author: raydak GmbH
   description: Home
-  github: https://github.com/raydak-labs
-  linkedIn: https://linkedin.com/company/raydak
   shortTitle: raydak
   footer:
     links:
@@ -30,10 +28,10 @@ params:
     socialmedia:
       - title: Github
         iconClasses: fa-brands fa-github
-        link: "{{ .Site.Params.github }}"
+        link: https://github.com/raydak-labs
       - title: LinkedIn
         iconClasses: fa-brands fa-linkedin
-        link: "{{ .Site.Params.linkedIn }}"
+        link: https://linkedin.com/company/raydak
 # see https://gohugo.io/about/hugo-and-gdpr/#disable-all-services
 privacy:
   disqus:
