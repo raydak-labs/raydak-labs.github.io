@@ -24,12 +24,12 @@
               <p class="text-sm">
                 {{ .description }}
               </p>
-              <div class="social mt-3 flex  space-x-2">
+              <div class="social mt-3 flex space-x-2">
                 {{ with .github }}
-                  {{ partial "home/social-icon" (dict "url" . "icon" "fa-brands fa-github") }}
+                  {{ partial "home/social-icon" (dict "url" (printf "https://github.com/%s" . ) "icon" "fa-brands fa-github") }}
                 {{ end }}
                 {{ with .linkedin }}
-                  {{ partial "home/social-icon" (dict "url" . "icon" "fa-brands fa-linkedin") }}
+                  {{ partial "home/social-icon" (dict "url" (printf "https://www.linkedin.com/in/%s" . ) "icon" "fa-brands fa-linkedin") }}
                 {{ end }}
                 {{ with .homepage }}
                   {{ partial "home/social-icon" (dict "url" . "icon" "fa-solid fa-link") }}
