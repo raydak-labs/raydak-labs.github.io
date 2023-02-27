@@ -32,5 +32,8 @@
     "dev:hugo": "hugo server",
     "start": "yarn dev",
     "tailwind": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css"
+  },
+  "hugo-bin": {
+    "buildTags": "extended"
   }
 }
