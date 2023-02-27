@@ -1,0 +1,44 @@
+<div id="team" class="team">
+  <div class="mx-auto max-w-7xl text-gray-900 dark:text-gray-50 md:px-1.5">
+    <div class="not-prose px-4 text-gray-900 ">
+      <div
+        class="mx-auto mt-6 mb-6 grid gap-4 pb-6 md:grid-cols-2 lg:max-w-none"
+      >
+        {{ range $.Site.Data.founders }}
+          <div
+            class="member flex flex-col items-start rounded-md bg-gray-50 p-7 text-gray-900 shadow-lg duration-200 hover:-translate-y-2  dark:bg-gray-800 dark:text-zinc-200 sm:flex-row"
+          >
+            <div class="sm:flex-start shrink-0 self-center pr-8 sm:min-w-fit">
+              <img
+                src="{{ ((resources.GetMatch .image ).Resize "500x webp").RelPermalink }}"
+                alt="Founder image: {{ .name }}"
+                class="aspect-square h-full max-h-44 w-full rounded-full"
+              />
+            </div>
+            <div>
+              <h4 class="mb-1 text-xl font-bold text-indigo-500">
+                {{ .name }}
+              </h4>
+              <span class="text-sm font-medium">{{ .position }}</span>
+              <hr class="my-2" />
+              <p class="text-sm">
+                {{ .description }}
+              </p>
+              <div class="social mt-3 flex  space-x-2">
+                {{ with .github }}
+                  {{ partial "home/social-icon" (dict "url" . "icon" "fa-brands fa-github") }}
+                {{ end }}
+                {{ with .linkedin }}
+                  {{ partial "home/social-icon" (dict "url" . "icon" "fa-brands fa-linkedin") }}
+                {{ end }}
+                {{ with .homepage }}
+                  {{ partial "home/social-icon" (dict "url" . "icon" "fa-solid fa-link") }}
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
