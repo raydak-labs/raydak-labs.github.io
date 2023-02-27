@@ -154,14 +154,12 @@
           >
             <div class="relative overflow-hidden rounded-2xl shadow-xl">
               {{ $heroOne := resources.GetMatch "images/pages/home/banner_1.jpg" }}
-              {{ $banner_resized := ($heroOne.Resize "500x") }}
+              {{ $banner_resized := ($heroOne.Resize "1000x webp") }}
               <img
                 src="{{ $banner_resized.RelPermalink }}"
                 alt="TailBliss Hacktoberfest Image"
-                class="w-full rounded-lg shadow-xl lg:h-full lg:w-auto lg:max-w-none"
+                class="rounded-lg object-cover shadow-xl"
                 loading="lazy"
-                width="100%"
-                height="auto"
               />
               <div
                 class="absolute inset-0 bg-indigo-300 mix-blend-multiply"
