@@ -5,6 +5,7 @@ draft: false
 language: en
 description: Credits page
 ---
+
 <!-- @format -->
  <div class="container show-up">
         <ul>
@@ -16,11 +17,7 @@ description: Credits page
             >
           </li>
           <li>
-            <a
-              href="https://www.freepik.com/free-vector/tiny-programmers-upgrading-operation-system-computer-isolated-flat-illustration_11235955.htm#query=cloud%20it&position=2&from_view=search"
-              >Image by pch.vector</a
-            >
-            on <a href="https://www.freepik.com/">Freepik</a>
+          <a href="https://www.freepik.com/free-vector/team-starting-project_7416581.htm#query=start&position=1&from_view=author">Image by pch.vector</a> on Freepik
           </li>
           <li>
             <a href="https://github.com/nusserstudios/tailbliss">Page template by nusserstudios
