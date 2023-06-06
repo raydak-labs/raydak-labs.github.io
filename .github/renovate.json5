@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "config:base",
+    "schedule:monthly",
+    ":prConcurrentLimitNone",
+    ":prHourlyLimitNone"
+  ],
+  "labels": ["dependencies"],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin"],
+      "automerge": true
+    }
+  ]
+}
