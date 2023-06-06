@@ -1,6 +1,5 @@
 # TODO
 
 - taxonomies
-- Super Fast & Flexible vom Template geklaut
-- font auf mobile -> impressum wieder mit google fonts?
+- font auf mobile
 - layout auf mobile
