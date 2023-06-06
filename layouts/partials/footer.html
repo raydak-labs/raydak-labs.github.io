@@ -1,0 +1,46 @@
+<!-- Footer section -->
+{{ $alpine := resources.Get "js/alpinejs.js" | js.Build }}
+<script src="{{ $alpine.RelPermalink }}" defer></script>
+{{ $darkmode := resources.Get "js/darkmode.js" | js.Build }}
+<script src="{{ $darkmode.RelPermalink }}" defer></script>
+{{ $fa := resources.Get "js/fontawesome/fontawesome.js" | js.Build }}
+<script src="{{ $fa.RelPermalink }}" defer></script>
+{{ $faSolid := resources.Get "js/fontawesome/solid.js" | js.Build }}
+<script src="{{ $faSolid.RelPermalink }}" defer></script>
+{{ $faBrands := resources.Get "js/fontawesome/brands.js" | js.Build }}
+<script src="{{ $faBrands.RelPermalink }}" defer></script>
+<footer class="bg-gray-900">
+  <div
+    class="mx-auto max-w-md overflow-hidden px-4 py-12 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"
+  >
+    <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+      {{ range .Site.Params.footer.links }}
+        <div class="px-5 py-2">
+          <a
+            href="{{ .link }}"
+            class="text-base text-gray-400 hover:text-gray-300"
+          >
+            {{ .title }}
+          </a>
+        </div>
+      {{ end }}
+    </nav>
+    <div class="mt-8 flex justify-center space-x-6">
+      {{ range .Site.Params.footer.socialmedia }}
+        <a href="{{ .link }}" class="text-gray-400 hover:text-gray-300">
+          <span
+            class="{{ .iconClasses }} text-2xl"
+            title="{{ .title }}"
+            aria-hidden="true"
+          ></span>
+          <span class="sr-only">{{ .title }}</span>
+        </a>
+      {{ end }}
+    </div>
+    <p class="mt-8 text-center text-base text-gray-400">
+      &copy;
+      {{ now.Format "2006" }}
+      {{ .Site.Title }}. All rights reserved.
+    </p>
+  </div>
+</footer>

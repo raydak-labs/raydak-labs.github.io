@@ -1,0 +1,35 @@
+- title: "Cloud"
+  featured_image: {}
+  icon: fa-brands fa-aws
+  description: Wir helfen Euch beim Aufsetzen und Weiterentwickeln eures Cloud-Setups. Ob ihr noch ganz am Anfang steht und die ersten AWS-Accounts anlegt, eure Apps in Containern deployt oder schon Serverless unterwegs seid; wir unterstützen in jedem Bereich.
+  tags:
+    - Cloud-Native beim Design
+    - Infrastructure as Code (Terraform, Pulumi, ...)
+    - Kosteneffizient
+    - Migration bestehender Workloads
+- title: "Entwicklung & DevOps"
+  featured_image: {}
+  icon: fa-solid fa-gears
+  description: Braucht Ihr Unterstützung bei der Entwicklung eurer Anwendungen? Wir gestalten gerne mit und für Euch die Architektur eurer Anwendungen und entwickeln sie nach den Kundenanforderungen. Hierbei legen wir besonders Wert auf ein gutes Design bis hin zum Deployment und Betrieb.
+  tags:
+    - Agil nach Kanban oder Scrum
+    - Full-Stack (TypeScript, Go, Python, Kotlin, ...)
+    - End-to-End (Build, Deployment, Betrieb)
+    - CI/CD und Low-Operations als Minimum
+- title: "Container & Kubernetes"
+  featured_image: {}
+  icon: fa-brands fa-docker
+  description: Mit Containern vereinfacht Ihr Eure Deployments und bringt Dev & Ops zusammen. Unser Know-How zu laufzeitkritischen Kubernetes-Umgebungen on-premises und in der Cloud helfen Euch mit Eurer Kubernetes-Umgebung.
+  tags:
+    - Kubernetes-Deployment & Betrieb
+    - Containerisierung Eurer Apps
+    - Monitoring, Logging & Alerting
+    - Ohne Vendor-Lock-In
+- title: "Workshops & Schulungen"
+  featured_image: {}
+  icon: fa-solid fa-graduation-cap
+  description: Wir sehen uns als Entwicklungspartner und wollen unser Know-How an Eure Entwickler weitergeben. Wollt Ihr einen Überblick über ein Themengebiet oder einen Deep-Dive mit realistischen Aufgaben, dann gebt uns Bescheid!
+  tags:
+    - Trainings vor Ort und Remote
+    - Workshops mit praktischen Aufgaben
+    - Deep-Dives in allen Themen unseres Portfolios

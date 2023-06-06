@@ -1,0 +1,31 @@
+<title itemprop="name">
+  {{ if .IsHome }}
+    {{ $.Site.Params.description }} |
+    {{ .Title }}
+  {{ else }}
+    {{ .Title }} |
+    {{ .Site.Title }}
+  {{ end }}
+</title>
+<meta
+  name="description"
+  content="{{ if .Description }}
+    {{ .Description }}
+  {{ else }}
+    {{ .Site.Params.description }}
+  {{ end }}"
+/>
+<meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
+
+{{ template "_internal/twitter_cards.html" . }}
+{{ template "_internal/opengraph.html" . }}
+
+{{/* see https://github.com/gohugoio/hugo/issues/8296 */}}
+{{- with .Params.locale }}
+  <meta property="og:locale" content="{{ . }}" />
+{{ else }}
+  {{- with .Site.Params.locale }}
+    <meta property="og:locale" content="{{ . }}" />
+  {{ end }}
+{{ end }}

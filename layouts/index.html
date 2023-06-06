@@ -1,0 +1,155 @@
+{{ define "main" }}
+  <main>
+    <div class="bg-gray-200 dark:bg-gray-900">
+      <div class="mx-auto max-w-screen-xl px-4 py-8">
+        <div class="mb-8 grid items-center gap-8 sm:mb-0 ">
+          <div class="col-span-6 px-4 text-center sm:mb-6 lg:mb-0">
+            <h1
+              class="mb-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white md:text-5xl xl:text-6xl"
+            >
+              Entwicklung und Consulting
+            </h1>
+            <h2
+              class="pb-2 text-3xl font-light text-gray-800 dark:text-gray-300 md:text-4xl"
+            >
+              Schnell und Flexibel
+            </h2>
+            <a
+              href="{{ relref . "#contact" }}"
+              class="mx-auto inline-block space-x-4 py-4"
+            >
+              <span
+                class="mx-auto mb-2 block max-w-fit rounded bg-indigo-500 px-2.5 py-1 text-sm font-bold text-gray-50 md:min-w-fit"
+              >
+                Schreib uns!
+              </span>
+            </a>
+            <p
+              class="mx-auto mb-6 max-w-xl font-normal text-gray-900 dark:text-gray-50 md:text-lg xl:mb-2 xl:text-xl"
+            >
+              Wir kennen die aktuellsten Trends und Technologie-Stacks und
+              wissen, wie man damit effiziente und performante Systeme baut. Wir
+              entwickeln selbst, geben unser Wissen aber auch gerne beratend und
+              in Workshops weiter. Interessiert?
+            </p>
+          </div>
+        </div>
+      </div>
+      {{ partial "home/team" . }}
+    </div>
+
+    <!-- Wie helfen wir -->
+    <div class="relative my-4">
+      <div
+        class="px-4 lg:px-8 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24"
+      >
+        <div class="relative sm:py-8 lg:py-0">
+          <div
+            aria-hidden="true"
+            class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
+          >
+            <div
+              class="absolute inset-y-0 right-1/2 w-full rounded-r-3xl bg-gray-50 dark:bg-gray-900/10 lg:right-72"
+            ></div>
+            <svg
+              class="absolute top-8 left-1/2 -ml-3 lg:-right-8 lg:left-auto lg:top-12"
+              width="404"
+              height="392"
+              fill="none"
+              viewBox="0 0 404 392"
+              loading="lazy"
+            >
+              <defs>
+                <pattern
+                  id="02f20b47-fd69-4224-a62a-4c9de5c763f7"
+                  x="0"
+                  y="0"
+                  width="20"
+                  height="20"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <rect
+                    x="0"
+                    y="0"
+                    width="4"
+                    height="4"
+                    class="text-gray-200 dark:text-gray-900/60"
+                    fill="currentColor"
+                  />
+                </pattern>
+              </defs>
+              <rect
+                width="404"
+                height="392"
+                fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)"
+              />
+            </svg>
+          </div>
+          <div
+            class="relative mx-auto max-w-md py-6 sm:max-w-3xl lg:max-w-none lg:py-20"
+          >
+            <div class="relative overflow-hidden rounded-2xl shadow-xl">
+              {{ $banner := resources.GetMatch "images/pages/home/banner_1.jpg" }}
+              {{ $banner_resized := ($banner.Resize "1000x webp") }}
+              <img
+                src="{{ $banner_resized.RelPermalink }}"
+                alt="Generic Stockphoto"
+                class="rounded-lg object-cover shadow-xl"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-indigo-300 mix-blend-multiply"
+              ></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-indigo-600 opacity-80"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div class="relative mx-auto max-w-md sm:max-w-3xl">
+          <!-- Content area -->
+          <div class="sm:pt-6 md:pt-12 lg:pt-20">
+            <h2
+              class="text-3xl font-bold capitalize tracking-tight text-gray-900 dark:text-gray-50 sm:text-4xl"
+            >
+              Wie helfen wir euch?
+            </h2>
+            <div class="mt-6 space-y-6 text-gray-900 dark:text-white">
+              <p class="text-lg leading-7">
+                Wir haben ein breites Portfolio an Wissen in verschiedenen
+                Bereichen der IT. Fokus legen wir dabei auf die Cloud,
+                Kubernetes, DevOps und saubere Softwareentwicklung.
+              </p>
+
+              <div
+                class="mt-12 grid grid-cols-3 gap-4 md:grid-cols-3 lg:mt-0 lg:grid-cols-3"
+              >
+                <div
+                  class="col-span-1 flex justify-center rounded bg-gray-50 px-4 py-4 dark:bg-gray-300/10"
+                >
+                  <span class="text-xl font-bold"> Consulting </span>
+                </div>
+                <div
+                  class="col-span-1 flex justify-center rounded bg-gray-50 px-4 py-4 dark:bg-gray-300/10"
+                >
+                  <span class="text-xl font-bold"> Workshops </span>
+                </div>
+                <div
+                  class="col-span-1 flex justify-center rounded bg-gray-50 px-4 py-4 dark:bg-gray-300/10"
+                >
+                  <span class="text-xl font-bold"> Coding </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{ partial "home/logos" . }}
+
+    {{ partial "home/services" . }}
+
+    {{ partial "home/contact" . }}
+  </main>
+{{ end }}
