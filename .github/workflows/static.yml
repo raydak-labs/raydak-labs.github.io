@@ -3,7 +3,7 @@ name: Build & Deploy
 on:
   push:
     branches:
-      - $default-branch
+      - main
   pull_request:
 
   # Allows you to run this workflow manually from the Actions tab
