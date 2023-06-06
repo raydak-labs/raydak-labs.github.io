@@ -8,7 +8,7 @@ enableInlineShortcodes: true
 
 imaging:
   quality: 95
-  resampleFilter: Lanczos # see https://gohugo.io/content-management/image-processing/#resampling-filter
+  resampleFilter: lanczos # see https://gohugo.io/content-management/image-processing/#resampling-filter
 
 markup:
   goldmark:
@@ -51,7 +51,21 @@ module:
   mounts:
     - source: assets
       target: assets
+    - source: hugo_stats.json
+      target: assets/watching/hugo_stats.json
     - source: node_modules/alpinejs/dist/cdn.js
       target: assets/js/alpinejs.js
     - source: node_modules/@fortawesome/fontawesome-free/js
       target: assets/js/fontawesome
+
+build:
+  writeStats: true
+  cachebusters:
+    - source: assets/watching/hugo_stats\.json
+      target: styles\.css
+    - source: (postcss|tailwind)\.config\.js
+      target: css
+    - source: assets/.*\.(js|ts|jsx|tsx)
+      target: js
+    - source: assets/.*\.(.*)$
+      target: $1

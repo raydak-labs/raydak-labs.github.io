@@ -39,14 +39,14 @@
   }
 </script>
 
-{{ $styles := resources.Get "css/style.css" | postCSS }}
-{{ if .Site.IsServer }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
-{{ else }}
-  {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
-  <link
-    rel="stylesheet"
-    href="{{ $styles.RelPermalink }}"
-    integrity="{{ $styles.Data.Integrity }}"
-  />
+{{ $options := dict "inlineImports" true }}
+{{ $styles := resources.Get "css/styles.css" }}
+{{ $styles = $styles | resources.PostCSS $options }}
+{{ if hugo.IsProduction }}
+  {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
 {{ end }}
+<link
+  href="{{ $styles.RelPermalink }}"
+  rel="stylesheet"
+  integrity="{{ $styles.Data.Integrity }}"
+/>

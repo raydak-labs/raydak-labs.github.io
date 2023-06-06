@@ -1,10 +1,10 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
+const typography = require("@tailwindcss/typography");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./layouts/**/*.html", "./content/**/*.md", "./data/**/*.yml"],
+  content: ["./hugo_stats.json"],
   darkMode: "class",
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [typography],
   theme: {
     extend: {
       colors: {
