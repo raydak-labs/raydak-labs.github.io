@@ -2,6 +2,7 @@
   "extends": [
     "config:base",
     "schedule:monthly",
+    ":pinVersions",
     ":prConcurrentLimitNone",
     ":prHourlyLimitNone"
   ],
