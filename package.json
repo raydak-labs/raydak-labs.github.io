@@ -17,7 +17,7 @@
     "postcss": "8.4.29",
     "postcss-cli": "10.1.0",
     "prettier": "2.8.8",
-    "prettier-plugin-go-template": "0.0.13",
+    "prettier-plugin-go-template": "0.0.15",
     "prettier-plugin-tailwindcss": "0.3.0",
     "rimraf": "5.0.1"
   },
