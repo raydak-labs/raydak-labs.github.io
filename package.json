@@ -8,7 +8,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "6.5.1",
     "@tailwindcss/typography": "0.5.10",
-    "alpinejs": "3.13.3",
+    "alpinejs": "3.13.5",
     "hugo-bin": "0.118.0",
     "tailwindcss": "3.4.0"
   },
