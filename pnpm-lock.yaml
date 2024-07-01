@@ -15,8 +15,8 @@ dependencies:
     specifier: 3.14.1
     version: 3.14.1
   hugo-bin:
-    specifier: 0.123.2
-    version: 0.123.2
+    specifier: 0.125.0
+    version: 0.125.0
   tailwindcss:
     specifier: 3.4.4
     version: 3.4.4
@@ -743,8 +743,8 @@ packages:
       resolve-alpn: 1.2.1
     dev: false
 
-  /hugo-bin@0.123.2:
-    resolution: {integrity: sha512-HxKrHHso1PpXMOoZbAmopCqsYzdL3oUUR+/NTBdrhAOZFsKGaP1abLdJgu9GUyhUq+gYQOtDUtpB9wjoDyv6GQ==}
+  /hugo-bin@0.125.0:
+    resolution: {integrity: sha512-cTvHzQdK04KrBaW3jPdd/JAQXCOdXT1GiPHaMxe0YtLTVCV0ElgxkvXn6eQJUDl4QqM8+IlsFg/b2ofz6XS//A==}
     engines: {node: '>=18'}
     hasBin: true
     requiresBuild: true
