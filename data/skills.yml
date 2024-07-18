@@ -1,7 +1,7 @@
 - title: "Cloud"
   featured_image: {}
   icon: fa-brands fa-aws
-  description: Wir helfen Euch beim Aufsetzen und Weiterentwickeln eures Cloud-Setups. Ob ihr noch ganz am Anfang steht und die ersten AWS-Accounts anlegt, eure Apps in Containern deployt oder schon Serverless unterwegs seid; wir unterstützen in jedem Bereich.
+  description: Wir helfen Euch beim Aufsetzen und Weiterentwickeln Eures Cloud-Setups. Ob Ihr noch ganz am Anfang steht und die ersten AWS-Accounts anlegt, Eure Apps in Containern deployt oder schon Serverless unterwegs seid; wir unterstützen in jedem Bereich.
   tags:
     - Cloud-Native beim Design
     - Infrastructure as Code (Terraform, Pulumi, ...)
@@ -10,7 +10,7 @@
 - title: "Entwicklung & DevOps"
   featured_image: {}
   icon: fa-solid fa-gears
-  description: Braucht Ihr Unterstützung bei der Entwicklung eurer Anwendungen? Wir gestalten gerne mit und für Euch die Architektur eurer Anwendungen und entwickeln sie nach den Kundenanforderungen. Hierbei legen wir besonders Wert auf ein gutes Design bis hin zum Deployment und Betrieb.
+  description: Braucht Ihr Unterstützung bei der Entwicklung Eurer Anwendungen? Wir gestalten gerne mit und für Euch die Architektur Eurer Anwendungen und entwickeln sie nach den Kundenanforderungen. Hierbei legen wir besonders Wert auf ein gutes Design bis hin zum Deployment und Betrieb.
   tags:
     - Agil nach Kanban oder Scrum
     - Full-Stack (TypeScript, Go, Python, Kotlin, ...)
