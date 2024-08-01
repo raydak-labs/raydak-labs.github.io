@@ -13,7 +13,7 @@ importers:
         version: 6.6.0
       '@tailwindcss/typography':
         specifier: 0.5.13
-        version: 0.5.13(tailwindcss@3.4.6)
+        version: 0.5.13(tailwindcss@3.4.7)
       alpinejs:
         specifier: 3.14.1
         version: 3.14.1
@@ -21,8 +21,8 @@ importers:
         specifier: 0.126.0
         version: 0.126.0
       tailwindcss:
-        specifier: 3.4.6
-        version: 3.4.6
+        specifier: 3.4.7
+        version: 3.4.7
     devDependencies:
       autoprefixer:
         specifier: 10.4.19
@@ -611,10 +611,6 @@ packages:
     resolution: {integrity: sha512-RHiac9mvaRw0x3AYRgDC1CxAP7HTcNrrECeA8YYJeWnpo+2Q5CegtZjaotWTWxDG3UeGA1coE05iH1mPjT/2mg==}
     engines: {node: '>=16 || 14 >=14.17'}
 
-  minipass@7.0.4:
-    resolution: {integrity: sha512-jYofLM5Dam9279rdkWzqHozUo4ybjdZmCsDHePy5V/PbBcVMiSZR97gmAy45aqi8CK1lG2ECd356FU86avfwUQ==}
-    engines: {node: '>=16 || 14 >=14.17'}
-
   minipass@7.1.2:
     resolution: {integrity: sha512-qOOzS1cBTWYF4BH8fVePDBOO9iptMnGUEZwNc/cMWnTV2nVLZ7VoNWEPHkYczZA0pdoA7dl6e7FL659nX9S2aw==}
     engines: {node: '>=16 || 14 >=14.17'}
@@ -995,8 +991,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  tailwindcss@3.4.6:
-    resolution: {integrity: sha512-1uRHzPB+Vzu57ocybfZ4jh5Q3SdlH7XW23J5sQoM9LhE9eIOlzxer/3XPSsycvih3rboRsvt0QCmzSrqyOYUIA==}
+  tailwindcss@3.4.7:
+    resolution: {integrity: sha512-rxWZbe87YJb4OcSopb7up2Ba4U82BoiSGUdoDr3Ydrg9ckxFS/YWsvhN323GMcddgU65QRy7JndC7ahhInhvlQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -1142,13 +1138,13 @@ snapshots:
     dependencies:
       defer-to-connect: 2.0.1
 
-  '@tailwindcss/typography@0.5.13(tailwindcss@3.4.6)':
+  '@tailwindcss/typography@0.5.13(tailwindcss@3.4.7)':
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.4.6
+      tailwindcss: 3.4.7
 
   '@tokenizer/token@0.3.0': {}
 
@@ -1480,7 +1476,7 @@ snapshots:
       foreground-child: 3.1.1
       jackspeak: 2.3.6
       minimatch: 9.0.3
-      minipass: 7.0.4
+      minipass: 7.1.2
       path-scurry: 1.10.1
 
   glob@11.0.0:
@@ -1650,8 +1646,6 @@ snapshots:
     dependencies:
       brace-expansion: 2.0.1
 
-  minipass@7.0.4: {}
-
   minipass@7.1.2: {}
 
   mz@2.7.0:
@@ -1698,7 +1692,7 @@ snapshots:
   path-scurry@1.10.1:
     dependencies:
       lru-cache: 10.1.0
-      minipass: 7.0.4
+      minipass: 7.1.2
 
   path-scurry@2.0.0:
     dependencies:
@@ -1948,7 +1942,7 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  tailwindcss@3.4.6:
+  tailwindcss@3.4.7:
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
