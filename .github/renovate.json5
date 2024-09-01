@@ -1,16 +1,30 @@
 {
-  "extends": [
+  extends: [
     "config:base",
     "schedule:monthly",
     ":pinVersions",
     ":prConcurrentLimitNone",
-    ":prHourlyLimitNone"
+    ":prHourlyLimitNone",
   ],
-  "labels": ["dependencies"],
-  "packageRules": [
+  labels: ["dependencies"],
+  packageRules: [
     {
-      "matchUpdateTypes": ["minor", "patch", "pin"],
-      "automerge": true
-    }
-  ]
+      matchUpdateTypes: ["minor", "patch", "pin"],
+      automerge: true,
+    },
+    {
+      groupName: "devDependencies (non-major)",
+      matchDepTypes: ["devDependencies"],
+      matchUpdateTypes: ["patch", "minor"],
+    },
+    {
+      groupName: "dependencies (non-major)",
+      matchDepTypes: ["dependencies"],
+      matchUpdateTypes: ["patch", "minor"],
+    },
+    {
+      matchDepTypes: ["dependencies"],
+      semanticCommitType: "refactor",
+    },
+  ],
 }
