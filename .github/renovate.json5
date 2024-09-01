@@ -1,6 +1,6 @@
 {
   extends: [
-    "config:base",
+    "config:recommended",
     "schedule:monthly",
     ":pinVersions",
     ":prConcurrentLimitNone",
@@ -14,11 +14,13 @@
     },
     {
       groupName: "devDependencies (non-major)",
+      groupSlug: "dev-dependencies-non-major",
       matchDepTypes: ["devDependencies"],
       matchUpdateTypes: ["patch", "minor"],
     },
     {
       groupName: "dependencies (non-major)",
+      groupSlug: "dependencies-non-major",
       matchDepTypes: ["dependencies"],
       matchUpdateTypes: ["patch", "minor"],
     },
