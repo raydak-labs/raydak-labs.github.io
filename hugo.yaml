@@ -8,7 +8,7 @@ enableInlineShortcodes: true
 
 imaging:
   quality: 95
-  resampleFilter: lanczos # see https://gohugo.io/content-management/image-processing/#resampling-filter
+  resampleFilter: Lanczos # see https://gohugo.io/content-management/image-processing/#resampling-filter
 
 markup:
   goldmark:
@@ -69,3 +69,10 @@ build:
       target: js
     - source: assets/.*\.(.*)$
       target: $1
+
+menu:
+  main:
+    - identifier: projects
+      name: Projekte
+      url: /projects/
+      weight: 10

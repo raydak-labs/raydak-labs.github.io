@@ -5,14 +5,19 @@
             <div class="flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50 dark:bg-gray-900">
                 <a href="{{.Permalink}}">
                     {{ with .Params.featured_image }}
-                    {{ with resources.Get . }}
-                    {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
-                    <img src="{{ $postimage }}" class="object-fill overflow-hidden rounded-t-lg" width="100%" height=""
-                         loading="lazy" alt="{{ .Title }}" />
-
-                    {{ end }}
+                        {{ if strings.HasPrefix . "http" }}
+                            <img src="{{ . }}" class="object-fill overflow-hidden rounded-t-lg" width="100%" height=""
+                                 loading="lazy" alt="{{ $.Title }}" />
+                        {{ else }}
+                            {{ with resources.Get . }}
+                                {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
+                                <img src="{{ $postimage }}" class="object-fill overflow-hidden rounded-t-lg" width="100%" height=""
+                                     loading="lazy" alt="{{ $.Title }}" />
+                            {{ end }}
+                        {{ end }}
                     {{ end }}
                 </a>
+                
                 <div class="p-6">
                     <div class="flex-1">
                         <a href="{{.Permalink}}"
@@ -23,6 +28,13 @@
                             {{ .Params.summary }}
                         </p>
                     </div>
+                    {{ with .Params.page_link }}
+                    <div class="flex pt-6 font-medium text-indigo-600 dark:text-indigo-100 text-md">
+                        <span class="pr-2 font-black">Link:</span>
+                        <a href="{{.}}" target="_blank"
+                           class="inline-flex items-center rounded-md bg-gray-300 hover:bg-indigo-200 hover:text-black px-2.5 py-0.5 text-sm font-medium text-gray-900 capitalize">Visit</a>
+                    </div>
+                    {{ end }}
                     <div class="flex pt-6 font-medium text-indigo-600 dark:text-indigo-100 text-md">
                         <span class="pr-2 font-black">Tags:</span>
                         {{ range $elem_index, $elem_val := (.GetTerms "tags") }}
