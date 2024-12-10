@@ -81,10 +81,17 @@ menu:
       name: Produkte
       weight: 40
   productlinks:
-    - identifier: appearance
+    - identifier: aifred
       #pre: stars # can be stars, comments or piechart
       pre: ../assets/images/pages/products/aifred.jpg
       name: AIFred
       post: "KI Freelance Generator"
       url: "https://aifred.raydak.de"
       weight: 10
+    - identifier: crbnai
+      #pre: stars # can be stars, comments or piechart
+      pre: ../assets/images/pages/products/crbnai.png
+      name: CRBN AI
+      post: "AI Knowledge Bots"
+      url: "https://crbnai.com"
+      weight: 20
