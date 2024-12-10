@@ -75,4 +75,16 @@ menu:
     - identifier: projects
       name: Projekte
       url: /projects/
+      weight: 20
+    - identifier: productlinks
+      pre: complexdropdown
+      name: Produkte
+      weight: 40
+  productlinks:
+    - identifier: appearance
+      #pre: stars # can be stars, comments or piechart
+      pre: ../assets/images/pages/products/aifred.jpg
+      name: AIFred
+      post: "KI Freelance Generator"
+      url: "https://aifred.raydak.de"
       weight: 10
