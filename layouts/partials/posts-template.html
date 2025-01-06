@@ -35,14 +35,14 @@
                            class="inline-flex items-center rounded-md bg-gray-300 hover:bg-indigo-200 hover:text-black px-2.5 py-0.5 text-sm font-medium text-gray-900 capitalize">Visit</a>
                     </div>
                     {{ end }}
-                    <div class="flex pt-6 font-medium text-indigo-600 dark:text-indigo-100 text-md">
+                    {{/*  <div class="flex pt-6 font-medium text-indigo-600 dark:text-indigo-100 text-md">
                         <span class="pr-2 font-black">Tags:</span>
                         {{ range $elem_index, $elem_val := (.GetTerms "tags") }}
                         {{- if gt $elem_index 0 }}, {{ end -}}
                         <a href="{{ .Permalink }}"
                            class="inline-flex items-center rounded-md bg-gray-300 hover:bg-indigo-200 hover:text-black px-2.5 py-0.5 text-sm font-medium text-gray-900 capitalize">{{ .LinkTitle }}</a>
                         {{- end -}}
-                    </div>
+                    </div>  */}}
                     <div class="flex items-center mt-6">
                         <div class="flex-shrink-0">
                             <span class="sr-only">{{ .Params.author }}</span>
