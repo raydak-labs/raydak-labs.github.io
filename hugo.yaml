@@ -32,6 +32,12 @@ params:
       - title: LinkedIn
         iconClasses: fa-brands fa-linkedin
         link: https://linkedin.com/company/raydak
+      - title: Youtube
+        iconClasses: fa-brands fa-youtube
+        link: https://www.youtube.com/@raydak-labs
+      - title: Instagram
+        iconClasses: fa-brands fa-instagram
+        link: https://www.instagram.com/raydak_labs/
 # see https://gohugo.io/about/hugo-and-gdpr/#disable-all-services
 privacy:
   disqus:
