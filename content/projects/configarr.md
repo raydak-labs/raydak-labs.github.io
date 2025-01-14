@@ -1,5 +1,5 @@
 ---
-title: "Introducing Configarr: Streamlining Configuration Management for Sonarr and Radarr"
+title: "(Community) Introducing Configarr: Streamlining Configuration Management for Sonarr and Radarr"
 date: 2024-08-01T09:00:00+01:00
 draft: false
 language: en
@@ -7,12 +7,13 @@ featured_image: ../assets/images/featured/configarr-banner.png
 page_link: https://github.com/raydak-labs/configarr
 summary: Discover Configarr, a powerful tool for synchronizing configurations between Sonarr, Radarr, and TRaSH Guides, simplifying media server management.
 description: Learn about Configarr, an open-source project that automates the process of keeping your Sonarr and Radarr configurations in sync with TRaSH Guides and custom settings, enhancing your media server setup.
-author: raydak
+author: blackdark 
 authorimage: ../assets/images/global/author.webp
 tags: [
     "configarr",
     "sonarr",
     "radarr",
+    "community"
 ]
 categories: [
     "tools",
@@ -21,6 +22,8 @@ categories: [
 ---
 
 In the world of media server management, keeping your configurations up-to-date and consistent can be a challenging task. Today, we're excited to introduce Configarr, a powerful tool designed to simplify this process for Sonarr and Radarr users.
+
+This is a community project driven by single individuals or groups of community members.
 
 ## What is Configarr?
 
@@ -69,3 +72,8 @@ Configarr represents a significant step forward in simplifying media server mana
 For more information and to get started with Configarr, visit the [official GitHub repository](https://github.com/raydak-labs/configarr).
 
 Happy media managing!
+
+## Disclaimer
+
+The app described in this log is a community-developed project and is not directly affiliated with, endorsed by, or officially supported by this company. 
+While we acknowledge its development and functionality, it operates independently, and all questions, concerns, or issues should be directed to the app's respective developers or community.
