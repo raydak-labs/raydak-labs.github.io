@@ -18,8 +18,8 @@ importers:
         specifier: 3.14.8
         version: 3.14.8
       hugo-bin:
-        specifier: 0.139.0
-        version: 0.139.0
+        specifier: 0.142.0
+        version: 0.142.0
       tailwindcss:
         specifier: 3.4.17
         version: 3.4.17
@@ -467,8 +467,8 @@ packages:
     resolution: {integrity: sha512-V5nVw1PAOgfI3Lmeaj2Exmeg7fenjhRUgz1lPSezy1CuhPYbgQtbQj4jZfEAEMlaL+vupsvhjqCyjzob0yxsmQ==}
     engines: {node: '>=10.19.0'}
 
-  hugo-bin@0.139.0:
-    resolution: {integrity: sha512-ZjtVqatwvqCW6BSRNucj3xsNVoO3ZjuZDCg0NGQC0B/Wsvc6vwVfS7E6KD755XJ/N6o7raa3qXe+gIvJiew7cA==}
+  hugo-bin@0.142.0:
+    resolution: {integrity: sha512-i3ar9xmBbeMf0Q5tXrkCM3fARWN8BWV99tOq+b63C7EZd7a0aD5SOzDAWGi0pGxy583oKc/tS0VQSS3QWUI0fA==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -1568,7 +1568,7 @@ snapshots:
       quick-lru: 5.1.1
       resolve-alpn: 1.2.1
 
-  hugo-bin@0.139.0:
+  hugo-bin@0.142.0:
     dependencies:
       '@xhmikosr/bin-wrapper': 13.0.5
       package-config: 5.0.0
