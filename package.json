@@ -29,5 +29,13 @@
   },
   "hugo-bin": {
     "buildTags": "extended"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "hugo-bin"
+    ],
+    "onlyBuiltDependencies": [
+      "hugo-bin"
+    ]
   }
 }
