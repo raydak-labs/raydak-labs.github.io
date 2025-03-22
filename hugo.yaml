@@ -46,11 +46,11 @@ privacy:
     disable: true
   instagram:
     disable: true
-  twitter:
-    disable: true
   vimeo:
     disable: true
   youtube:
+    disable: true
+  x:
     disable: true
 
 module:
