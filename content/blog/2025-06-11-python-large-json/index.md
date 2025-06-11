@@ -1,6 +1,6 @@
 ---
 title: "Efficiently Processing Large JSON Files in Python Without Loading Everything Into Memory"
-date: 2025-06-11T12:00:00+01:00
+date: 2025-06-11T10:00:00+01:00
 draft: false
 language: en
 summary: Learn how to process large JSON datasets efficiently in Python using streaming and minimal memory, with practical code and profiling tips.
