@@ -7,11 +7,11 @@
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "6.7.2",
-    "@tailwindcss/postcss": "4.1.11",
-    "@tailwindcss/typography": "0.5.16",
-    "alpinejs": "3.14.9",
-    "hugo-bin": "0.145.2",
-    "tailwindcss": "4.1.11"
+    "@tailwindcss/postcss": "4.1.13",
+    "@tailwindcss/typography": "0.5.19",
+    "alpinejs": "3.15.0",
+    "hugo-bin": "0.147.1",
+    "tailwindcss": "4.1.13"
   },
   "devDependencies": {
     "postcss": "8.5.6",
