@@ -14,7 +14,7 @@
     "tailwindcss": "4.2.1"
   },
   "devDependencies": {
-    "postcss": "8.5.6",
+    "postcss": "8.5.8",
     "postcss-cli": "11.0.1",
     "prettier": "3.8.1",
     "prettier-plugin-go-template": "0.0.15",
