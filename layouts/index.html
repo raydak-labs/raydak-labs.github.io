@@ -1,143 +1,109 @@
 {{ define "main" }}
   <main>
-    <div class="bg-gray-200 dark:bg-gray-900">
-      <div class="mx-auto max-w-screen-xl px-4 py-8">
-        <div class="mb-8 grid items-center gap-8 sm:mb-0 ">
-          <div class="col-span-6 px-4 text-center sm:mb-6 lg:mb-0">
-            <h1
-              class="mb-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white md:text-5xl xl:text-6xl"
-            >
-              Entwicklung und Consulting
-            </h1>
-            <h2
-              class="pb-2 text-3xl font-light text-gray-800 dark:text-gray-300 md:text-4xl"
-            >
-              Schnell und Flexibel
-            </h2>
-            <a
-              href="{{ relref . "#contact" }}"
-              class="mx-auto inline-block space-x-4 py-4"
-            >
-              <span
-                class="mx-auto mb-2 block max-w-fit rounded bg-indigo-500 px-2.5 py-1 text-sm font-bold text-gray-50 md:min-w-fit"
-              >
-                Schreib uns!
-              </span>
+    <!-- Hero -->
+    <div class="relative overflow-hidden bg-gray-950">
+      <div class="absolute inset-0 bg-gradient-to-br from-indigo-900/40 via-gray-950 to-purple-900/30"></div>
+      <div class="hero-grid absolute inset-0 opacity-15"></div>
+      <div class="relative mx-auto max-w-screen-xl px-4 py-20 sm:py-28 lg:py-36">
+        <div class="mx-auto max-w-4xl text-center">
+          <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 px-4 py-1.5 text-sm font-medium text-indigo-300">
+            <i class="fa-solid fa-sparkles"></i>
+            AI-First Consulting &amp; Entwicklung
+          </div>
+          <h1 class="mb-4 text-4xl font-extrabold leading-tight tracking-tight text-white md:text-6xl xl:text-7xl">
+            Wir machen Euer Team
+            <span class="hero-gradient-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">AI-ready</span>
+          </h1>
+          <p class="mx-auto mb-10 max-w-2xl text-lg text-gray-300 md:text-xl">
+            Von strategischer KI-Beratung über intensive Workshops bis hin zu maßgeschneiderten AI Agents und Cloud-Infrastruktur — wir begleiten Euch auf dem Weg in die KI-gestützte Zukunft.
+          </p>
+          <div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <a href="{{ relref . "#contact" }}" class="inline-flex items-center gap-2 rounded-lg bg-indigo-500 px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-indigo-500/25 transition hover:bg-indigo-400 hover:shadow-indigo-500/40">
+              <i class="fa-solid fa-envelope"></i>
+              Jetzt Kontakt aufnehmen
             </a>
-            <p
-              class="mx-auto mb-6 max-w-xl font-normal text-gray-900 dark:text-gray-50 md:text-lg xl:mb-2 xl:text-xl"
-            >
-              Wir kennen die aktuellsten Trends und Technologie-Stacks und
-              wissen, wie man damit effiziente und performante Systeme baut. Wir
-              entwickeln selbst, geben unser Wissen aber auch gerne beratend und
-              in Workshops weiter. Interessiert?
-            </p>
+            <a href="{{ relref . "#services" }}" class="inline-flex items-center gap-2 rounded-lg border border-gray-600 px-8 py-3.5 text-base font-semibold text-gray-300 transition hover:border-gray-400 hover:text-white">
+              Unsere Services
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Highlights -->
+        <div class="mx-auto mt-16 grid max-w-4xl grid-cols-2 gap-4 sm:mt-20 md:grid-cols-4">
+          <div class="rounded-xl border border-gray-800 bg-gray-900/60 px-4 py-5 text-center backdrop-blur">
+            <div class="text-2xl font-bold text-indigo-400">AI</div>
+            <div class="mt-1 text-sm text-gray-400">Guidance &amp; Strategie</div>
+          </div>
+          <div class="rounded-xl border border-gray-800 bg-gray-900/60 px-4 py-5 text-center backdrop-blur">
+            <div class="text-2xl font-bold text-purple-400">Workshops</div>
+            <div class="mt-1 text-sm text-gray-400">Hands-On Training</div>
+          </div>
+          <div class="rounded-xl border border-gray-800 bg-gray-900/60 px-4 py-5 text-center backdrop-blur">
+            <div class="text-2xl font-bold text-pink-400">Agents</div>
+            <div class="mt-1 text-sm text-gray-400">MCP &amp; Workflows</div>
+          </div>
+          <div class="rounded-xl border border-gray-800 bg-gray-900/60 px-4 py-5 text-center backdrop-blur">
+            <div class="text-2xl font-bold text-emerald-400">Cloud</div>
+            <div class="mt-1 text-sm text-gray-400">DevOps &amp; K8s</div>
           </div>
         </div>
       </div>
-      {{ partial "home/team" . }}
     </div>
+
+    {{ partial "home/team" . }}
 
     <!-- Wie helfen wir -->
     <div class="relative my-4">
-      <div
-        class="px-4 lg:px-8 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24"
-      >
+      <div class="px-4 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
         <div class="relative sm:py-8 lg:py-0">
-          <div
-            aria-hidden="true"
-            class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
-          >
-            <div
-              class="absolute inset-y-0 right-1/2 w-full rounded-r-3xl bg-gray-50 dark:bg-gray-900/10 lg:right-72"
-            ></div>
-            <svg
-              class="absolute top-8 left-1/2 -ml-3 lg:-right-8 lg:left-auto lg:top-12"
-              width="404"
-              height="392"
-              fill="none"
-              viewBox="0 0 404 392"
-              loading="lazy"
-            >
+          <div aria-hidden="true" class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen">
+            <div class="absolute inset-y-0 right-1/2 w-full rounded-r-3xl bg-gray-50 dark:bg-gray-900/10 lg:right-72"></div>
+            <svg class="absolute top-8 left-1/2 -ml-3 lg:-right-8 lg:left-auto lg:top-12" width="404" height="392" fill="none" viewBox="0 0 404 392" loading="lazy">
               <defs>
-                <pattern
-                  id="02f20b47-fd69-4224-a62a-4c9de5c763f7"
-                  x="0"
-                  y="0"
-                  width="20"
-                  height="20"
-                  patternUnits="userSpaceOnUse"
-                >
-                  <rect
-                    x="0"
-                    y="0"
-                    width="4"
-                    height="4"
-                    class="text-gray-200 dark:text-gray-900/60"
-                    fill="currentColor"
-                  />
+                <pattern id="02f20b47-fd69-4224-a62a-4c9de5c763f7" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <rect x="0" y="0" width="4" height="4" class="text-gray-200 dark:text-gray-900/60" fill="currentColor" />
                 </pattern>
               </defs>
-              <rect
-                width="404"
-                height="392"
-                fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)"
-              />
+              <rect width="404" height="392" fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)" />
             </svg>
           </div>
-          <div
-            class="relative mx-auto max-w-md py-6 sm:max-w-3xl lg:max-w-none lg:py-20"
-          >
+          <div class="relative mx-auto max-w-md py-6 sm:max-w-3xl lg:max-w-none lg:py-20">
             <div class="relative overflow-hidden rounded-2xl shadow-xl">
               {{ $banner := resources.GetMatch "images/pages/home/banner_1.jpg" }}
               {{ $banner_resized := ($banner.Resize "1000x webp") }}
-              <img
-                src="{{ $banner_resized.RelPermalink }}"
-                alt="Generic Stockphoto"
-                class="rounded-lg object-cover shadow-xl"
-                loading="lazy"
-              />
-              <div
-                class="absolute inset-0 bg-indigo-300 mix-blend-multiply"
-              ></div>
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-indigo-600 opacity-80"
-              ></div>
+              <img src="{{ $banner_resized.RelPermalink }}" alt="raydak Team bei der Arbeit" class="rounded-lg object-cover shadow-xl" loading="lazy" />
+              <div class="absolute inset-0 bg-indigo-300 mix-blend-multiply"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-indigo-600 opacity-80"></div>
             </div>
           </div>
         </div>
         <div class="relative mx-auto max-w-md sm:max-w-3xl">
-          <!-- Content area -->
           <div class="sm:pt-6 md:pt-12 lg:pt-20">
-            <h2
-              class="text-3xl font-bold capitalize tracking-tight text-gray-900 dark:text-gray-50 sm:text-4xl"
-            >
+            <h2 class="text-3xl font-bold capitalize tracking-tight text-gray-900 dark:text-gray-50 sm:text-4xl">
               Wie helfen wir Euch?
             </h2>
             <div class="mt-6 space-y-6 text-gray-900 dark:text-white">
               <p class="text-lg leading-7">
-                Wir haben ein breites Portfolio an Wissen in verschiedenen
-                Bereichen der IT. Fokus legen wir dabei auf die Cloud,
-                Kubernetes, DevOps und saubere Softwareentwicklung.
+                Wir vereinen tiefes Know-How in KI, Cloud und Softwareentwicklung. Ob Ihr eine KI-Strategie braucht, Euer Team in AI-Tools schulen wollt oder maßgeschneiderte Agents und Workflows benötigt — wir sind Euer Partner für die digitale Transformation.
               </p>
 
-              <div
-                class="mt-12 grid grid-cols-3 gap-4 md:grid-cols-3 lg:mt-0 lg:grid-cols-3"
-              >
-                <div
-                  class="col-span-1 flex justify-center rounded bg-gray-50 px-4 py-4 dark:bg-gray-300/10"
-                >
-                  <span class="text-xl font-bold"> Consulting </span>
+              <div class="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:mt-0">
+                <div class="flex flex-col items-center justify-center rounded-lg bg-gray-50 px-3 py-4 dark:bg-gray-300/10">
+                  <i class="fa-solid fa-brain mb-2 text-xl text-indigo-500"></i>
+                  <span class="text-center text-sm font-bold">AI Guidance</span>
                 </div>
-                <div
-                  class="col-span-1 flex justify-center rounded bg-gray-50 px-4 py-4 dark:bg-gray-300/10"
-                >
-                  <span class="text-xl font-bold"> Workshops </span>
+                <div class="flex flex-col items-center justify-center rounded-lg bg-gray-50 px-3 py-4 dark:bg-gray-300/10">
+                  <i class="fa-solid fa-chalkboard-user mb-2 text-xl text-indigo-500"></i>
+                  <span class="text-center text-sm font-bold">Workshops</span>
                 </div>
-                <div
-                  class="col-span-1 flex justify-center rounded bg-gray-50 px-4 py-4 dark:bg-gray-300/10"
-                >
-                  <span class="text-xl font-bold"> Coding </span>
+                <div class="flex flex-col items-center justify-center rounded-lg bg-gray-50 px-3 py-4 dark:bg-gray-300/10">
+                  <i class="fa-solid fa-robot mb-2 text-xl text-indigo-500"></i>
+                  <span class="text-center text-sm font-bold">AI Agents</span>
+                </div>
+                <div class="flex flex-col items-center justify-center rounded-lg bg-gray-50 px-3 py-4 dark:bg-gray-300/10">
+                  <i class="fa-solid fa-cloud mb-2 text-xl text-indigo-500"></i>
+                  <span class="text-center text-sm font-bold">Cloud & DevOps</span>
                 </div>
               </div>
             </div>
