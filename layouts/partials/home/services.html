@@ -12,29 +12,52 @@
       <h2 class="text-3xl font-black capitalize tracking-tight text-gray-900 dark:text-gray-50 sm:text-4xl">
         Was wir Euch anbieten
       </h2>
-      <p class="mx-auto mt-3 max-w-2xl text-xl text-gray-500 dark:text-gray-300 sm:mt-4">
-        Von KI-Strategie und AI Agent-Entwicklung über Cloud-Infrastruktur bis zur Anwendungsentwicklung — modern, bewährt und zukunftssicher.
+      <p class="mx-auto mt-3 max-w-2xl text-lg text-gray-500 dark:text-gray-300 sm:mt-4">
+        Von KI-Strategie über Cloud-Infrastruktur bis zur Anwendungsentwicklung.
       </p>
     </div>
 
     <div class="mx-auto max-w-7xl text-gray-900 dark:text-gray-50">
       <div class="not-prose text-gray-900 dark:text-zinc-200">
-        <div class="mx-auto mt-12 mb-4 grid gap-5 md:grid-cols-2 lg:grid-cols-3 lg:max-w-none">
+        <div class="mx-auto mt-12 mb-4 grid items-start gap-5 md:grid-cols-2 lg:grid-cols-3 lg:max-w-none">
           {{ range $index, $skill := $.Site.Data.skills }}
-            <div class="group flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-gray-700 dark:bg-gray-900">
-              <div class="flex items-center gap-4 border-b border-gray-100 px-6 pt-6 pb-4 dark:border-gray-800">
+            <div
+              x-data="{ open: false }"
+              class="group flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition duration-300 hover:shadow-lg dark:border-gray-700 dark:bg-gray-900"
+            >
+              <button
+                @click="open = !open"
+                class="flex w-full cursor-pointer items-center gap-4 px-6 py-5 text-left"
+              >
                 <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 text-white shadow-md">
                   <i class="{{ .icon }} text-xl"></i>
                 </div>
-                <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100">
+                <h3 class="flex-1 text-lg font-bold text-gray-900 dark:text-gray-100">
                   {{ .title }}
                 </h3>
-              </div>
-              <div class="flex flex-1 flex-col p-6">
-                <p class="mb-5 flex-1 text-base leading-relaxed text-gray-600 dark:text-gray-300">
+                <span
+                  class="inline-flex text-sm text-gray-400 transition-transform duration-300"
+                  :class="{ 'rotate-180': open }"
+                >
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+              </button>
+
+              <div
+                x-show="open"
+                x-cloak
+                x-transition:enter="transition duration-200 ease-out"
+                x-transition:enter-start="opacity-0 -translate-y-2"
+                x-transition:enter-end="opacity-100 translate-y-0"
+                x-transition:leave="transition duration-150 ease-in"
+                x-transition:leave-start="opacity-100 translate-y-0"
+                x-transition:leave-end="opacity-0 -translate-y-2"
+                class="border-t border-gray-100 px-6 pb-6 pt-4 dark:border-gray-800"
+              >
+                <p class="mb-4 text-sm leading-relaxed text-gray-600 dark:text-gray-300">
                   {{ .description }}
                 </p>
-                <div class="space-y-2 border-t border-gray-100 pt-4 dark:border-gray-800">
+                <div class="space-y-1.5">
                   {{ range (.tags) }}
                     <div class="flex items-start gap-2 text-sm text-gray-700 dark:text-gray-300">
                       <i class="fa fa-check mt-0.5 shrink-0 text-indigo-500"></i>

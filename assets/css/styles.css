@@ -2,6 +2,8 @@
 
 @config './tailwind.config.js';
 
+[x-cloak] { display: none !important; }
+
 .hero-grid {
   background-image:
     linear-gradient(rgba(99, 102, 241, 0.08) 1px, transparent 1px),
