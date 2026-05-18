@@ -1,6 +1,6 @@
 <title itemprop="name">
   {{ if .IsHome }}
-    {{ $.Site.Params.description }} |
+    {{ with $.Site.Params.homeTitle }}{{ . }}{{ else }}{{ $.Site.Params.description }}{{ end }} |
     {{ .Title }}
   {{ else }}
     {{ .Title }} |

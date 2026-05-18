@@ -1,27 +1,31 @@
-<div id="team" class="team">
-  <div class="mx-auto max-w-7xl text-gray-900 dark:text-gray-50">
-    <div class="not-prose px-4 text-gray-900 ">
-      <div
-        class="mx-auto mt-6 mb-6 grid gap-4 pb-6 md:grid-cols-2 lg:max-w-none"
-      >
+<div id="team" class="team bg-gray-100 py-12 dark:bg-gray-900">
+  <div class="mx-auto max-w-7xl px-4">
+    <div class="mb-8 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-4xl">
+        Die Gründer
+      </h2>
+      <p class="mx-auto mt-2 max-w-2xl text-base text-gray-500 dark:text-gray-400">
+        15+ Jahre Erfahrung in Software, Cloud & KI.
+      </p>
+    </div>
+    <div class="not-prose">
+      <div class="mx-auto grid gap-6 md:grid-cols-2 lg:max-w-4xl">
         {{ range $.Site.Data.founders }}
-          <div
-            class="member flex flex-col items-start rounded-md bg-gray-50 p-7 text-gray-900 shadow-lg duration-200 hover:-translate-y-2  dark:bg-gray-800 dark:text-zinc-200 sm:flex-row"
-          >
-            <div class="sm:flex-start shrink-0 self-center pr-8 sm:min-w-fit">
+          <div class="member flex flex-col items-start rounded-xl border border-gray-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-gray-700 dark:bg-gray-800 sm:flex-row">
+            <div class="shrink-0 self-center pr-6 sm:min-w-fit">
               <img
                 src="{{ ((resources.GetMatch .image ).Resize "500x webp").RelPermalink }}"
-                alt="Founder image: {{ .name }}"
-                class="h-full max-h-44 rounded-full"
+                alt="{{ .name }}"
+                class="h-full max-h-40 rounded-full ring-2 ring-indigo-500/20"
               />
             </div>
             <div>
               <h4 class="mb-1 text-xl font-bold text-indigo-500">
                 {{ .name }}
               </h4>
-              <span class="text-sm font-medium">{{ .position }}</span>
-              <hr class="my-2" />
-              <p class="text-sm">
+              <span class="text-sm font-semibold text-gray-500 dark:text-gray-400">{{ .position }}</span>
+              <hr class="my-2 border-gray-200 dark:border-gray-700" />
+              <p class="text-sm text-gray-700 dark:text-gray-300">
                 {{ .description }}
               </p>
               <div class="social mt-3 flex space-x-2">

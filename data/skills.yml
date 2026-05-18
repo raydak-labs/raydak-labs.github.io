@@ -1,4 +1,31 @@
-- title: "Cloud"
+- title: "AI Guidance & Strategie"
+  featured_image: {}
+  icon: fa-solid fa-brain
+  description: Ihr wollt KI in Eurem Unternehmen sinnvoll einsetzen, wisst aber nicht wo anfangen? Wir begleiten Euch von der strategischen Planung über die Toolauswahl bis zur erfolgreichen Integration in bestehende Prozesse — pragmatisch und auf Eure Bedürfnisse zugeschnitten.
+  tags:
+    - KI-Strategie & Roadmap
+    - Toolauswahl und Evaluation
+    - Prozessoptimierung durch KI
+    - ROI-Analyse und Use-Case Bewertung
+- title: "AI Workshops & Schulungen"
+  featured_image: {}
+  icon: fa-solid fa-chalkboard-user
+  description: In unseren intensiven Workshops lernt Ihr den produktiven Umgang mit den neuesten KI-Tools. Von Prompt-Engineering über Code-Assistenten bis hin zu maßgeschneiderten Workflows — Euer Team wird fit für die KI-gestützte Arbeitswelt.
+  tags:
+    - "Tools: ChatGPT, Claude, Copilot, Cursor, v0"
+    - Prompt-Engineering & Best Practices
+    - KI-gestützte Softwareentwicklung
+    - Hands-On mit realen Use-Cases
+- title: "AI Agents & Workflows"
+  featured_image: {}
+  icon: fa-solid fa-robot
+  description: Wir entwickeln maßgeschneiderte KI-Agenten und automatisierte Workflows für Euer Unternehmen. Von MCP-Integrationen über benutzerdefinierte Agents bis hin zu komplexen Automatisierungspipelines — wir bringen KI dahin, wo sie echten Mehrwert schafft.
+  tags:
+    - Custom AI Agents & Assistenten
+    - MCP Server & Tool-Integrationen
+    - Workflow-Automatisierung
+    - RAG, Knowledge Bases & Embeddings
+- title: "Cloud & Infrastructure"
   featured_image: {}
   icon: fa-brands fa-aws
   description: Wir helfen Euch beim Aufsetzen und Weiterentwickeln Eures Cloud-Setups. Ob Ihr noch ganz am Anfang steht und die ersten AWS-Accounts anlegt, Eure Apps in Containern deployt oder schon Serverless unterwegs seid; wir unterstützen in jedem Bereich.
@@ -25,11 +52,3 @@
     - Containerisierung Eurer Apps
     - Monitoring, Logging & Alerting
     - Ohne Vendor-Lock-In
-- title: "Workshops & Schulungen"
-  featured_image: {}
-  icon: fa-solid fa-graduation-cap
-  description: Wir sehen uns als Entwicklungspartner und wollen unser Know-How an Eure Entwickler weitergeben. Wollt Ihr einen Überblick über ein Themengebiet oder einen Deep-Dive mit realistischen Aufgaben, dann gebt uns Bescheid!
-  tags:
-    - Trainings vor Ort und Remote
-    - Workshops mit praktischen Aufgaben
-    - Deep-Dives in allen Themen unseres Portfolios

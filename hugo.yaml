@@ -17,7 +17,8 @@ markup:
 
 params:
   author: raydak GmbH
-  description: Home
+  homeTitle: "AI Consulting, Workshops & Entwicklung aus Stuttgart"
+  description: "raydak GmbH — AI Consulting, Workshops, Agent-Entwicklung, Cloud & DevOps aus Stuttgart. Wir machen Euer Team AI-ready."
   shortTitle: raydak
   footer:
     links:
