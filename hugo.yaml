@@ -107,19 +107,12 @@ menu:
       url: "https://crbnai.com"
       weight: 20
 
-# Hugo ≥0.161 runs PostCSS under Node --permission. Tailwind v4 needs native
-# addons (lightningcss) when the executed tool is `postcss`.
+# Tailwind v4 via css.PostCSS: Hugo defaults only grant native-addon perms to
+# `tailwindcss`; the executed tool here is `postcss`.
 security:
   node:
     permissions:
-      allowAddons:
-        - postcss
-        - tailwindcss
-      allowChildProcess:
-        - postcss
-        - tailwindcss
-      allowRead:
-        - "."
-      allowWorker:
-        - postcss
-        - tailwindcss
+      allowAddons: [postcss, tailwindcss]
+      allowChildProcess: [postcss, tailwindcss]
+      allowWorker: [postcss, tailwindcss]
+

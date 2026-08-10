@@ -25,20 +25,9 @@
     "build": "hugo --minify",
     "clean": "rimraf public/",
     "dev": "hugo server",
-    "start": "pnpm dev",
-    "fix:postcss-bin": "node scripts/fix-postcss-bin.mjs",
-    "postinstall": "node scripts/fix-postcss-bin.mjs",
-    "prebuild": "node scripts/fix-postcss-bin.mjs"
+    "start": "pnpm dev"
   },
   "hugo-bin": {
     "buildTags": "extended"
-  },
-  "pnpm": {
-    "ignoredBuiltDependencies": [
-      "hugo-bin"
-    ],
-    "onlyBuiltDependencies": [
-      "hugo-bin"
-    ]
   }
 }
