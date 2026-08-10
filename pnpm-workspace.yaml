@@ -1,2 +1,5 @@
+# Hugo ≥0.161 requires Node entrypoints (not pnpm shell shims) in node_modules/.bin.
+# https://github.com/gohugoio/hugo/issues/14852
+preferSymlinkedExecutables: true
 allowBuilds:
   hugo-bin: true
