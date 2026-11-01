@@ -9,8 +9,8 @@
     "@fortawesome/fontawesome-free": "7.3.1",
     "@tailwindcss/postcss": "4.3.3",
     "@tailwindcss/typography": "0.5.20",
-    "alpinejs": "3.17.1",
-    "hugo-bin": "0.162.0",
+    "alpinejs": "3.17.5",
+    "hugo-bin": "0.167.0",
     "tailwindcss": "4.3.3"
   },
   "devDependencies": {
